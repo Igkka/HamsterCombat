@@ -1,0 +1,513 @@
+body{
+    margin: 0;
+}
+.game{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.game_window{
+    width: 25vw;
+    height: 90vh;
+    background-color: rgba(26, 26, 26, 0.822);
+    border-radius: 35px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    /* display: none; */
+}
+
+.game_header{
+    width: 100%;
+    height: 15%;
+    color: white;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Arial;
+}
+.game_main{
+    box-shadow: 0px -10px 70px rgb(39, 60, 177);
+    width: 100%;
+    height: 85%;
+    border-top: 3px solid rgba(40, 43, 190, 0.747); 
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.game_name{
+    text-align: center;
+
+}
+
+.header_bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.main_bar div{
+    width: 5vw;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    align-content: center;
+    font-family: Arial;
+    height: 50px;
+    border-radius: 15px;
+    background-color:#32363C ;
+}
+.main_bar{
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_wallet{
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: Arial;
+    
+}
+
+.main_lvl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
+
+}
+
+.level_bar{
+
+width: 80%;
+height: 10px;
+border: 1px solid gray;
+border-radius: 30px;
+overflow: hidden;
+}
+
+.level_progress{
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(120deg,#ADFAA1, #C597CC,#2F39A3);
+    transition: all .2s ease;
+}
+
+.main_tap{
+    width: 12vw;
+    height: 12vw;
+    border-radius:50% ;
+    border: 9px solid #35389E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#4043b3,#2B2D74);
+    margin: 0 auto;
+}
+.main_tap img{
+    width: 100px;
+}
+
+.main_energy{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.game_footer{
+width: 80%;
+border-radius: 15px;
+height: 7%;
+background-color: #32363C;
+margin: 0 auto;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+.game_footer p{
+    font-size: 8px;
+
+}
+
+.game_footer div{
+    height: 80%;
+    width: 10%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s ease;
+}
+
+.game_footer div:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+.main_tap{
+    user-select: none;
+    position: relative;
+}
+
+
+.main_bar2{
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_bar2 div{
+    width: 5vw;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    align-content: center;
+    font-family: Arial;
+    height: 50px;
+    border-radius: 15px;
+    background-color:#32363C ;
+    
+}
+.game_window2{
+    width: 25vw;
+    height: 90vh;
+    background-color: rgba(26, 26, 26, 0.822);
+    border-radius: 35px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    display: none;
+}
+
+.game_main2{
+    box-shadow: 0px -10px 90px rgb(39, 60, 177);
+    width: 100%;
+    height: 98%;
+    border-top: 3px solid rgba(40, 43, 190, 0.747); 
+    border-radius: 15px 15px 0px 0px;
+
+}
+.sas{
+    width: 100px;
+    height: 80px;
+}
+
+.main_wallet2{
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: Arial;
+    
+}
+
+
+.main_daily{
+    width: 25vw;
+    height: 4vh;
+    margin-top: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #32363C;
+    border-radius: 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+   
+}
+
+.daily_combo{
+    width: 6vw;
+    height: 4vh;
+    background-color: #26282b;
+    border-radius: 15px;
+    text-align: center;
+}
+.reclama{
+    margin-top: 20px;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.geo_img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #BFFF98 ;
+    border-radius: 15px;
+    background-color: #32363C;
+    
+
+}
+
+
+
+.meme{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #BFFF98 ;
+    border-radius: 15px;
+    background-color: #32363C;
+}
+.hamster_foot{
+    width: 80px;
+    height: 80px;    
+    border: 1px solid #BFFF98 ;
+    border-radius: 15px;
+    background-color: #32363C;
+}
+
+.slide{
+    width: 25vw;
+    height: 4vh;
+    margin-top: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #32363C;
+    border-radius: 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.slide div{
+    
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.slide div:hover{
+    transform: translateY(-3px);
+}
+.tap-money{
+    width: 30px !important;
+    animation: tap-money 1s 1;
+    position: absolute;
+}
+
+.game_auth{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-image: url(../img/hamster_combat1.png);
+    background-position: center bottom;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.game_auth form{
+width: 300px;
+height: 300px;
+border-top: 2px solid rgb(31, 25, 117);
+border-radius: 15px;
+box-shadow: 0px -15px 10px rgb(67, 53, 129);
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+backdrop-filter: blur(5px);
+}
+
+
+#username{
+    border: none;
+    background:none;
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(29, 29, 83);
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+#create_acc{
+    width: 150px;
+    height: 50px;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(29, 29, 83);;
+    color: white;
+    transition: all .2s ease;
+
+}
+#create_acc:hover{
+background-color: #2B2D74;
+color: white;
+transform:translateY(-5px) ;
+}
+
+
+.bbaction{
+    width: 210px;
+    height: 190px;
+    margin-top: 15px;
+    background-color: #32363C;
+    border-radius: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.action1 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.action11{
+    font-size: 10px;
+    margin-left: 100px;
+
+}
+.action111{
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+
+.action1111{
+    font-size: 20px;
+    margin-left: 100px;
+
+    
+}
+
+.bbaction2{
+    width: 210px;
+    height: 190px;
+    margin-top: 15px;
+    margin-left: 250px;
+    background-color: #32363C;
+    border-radius: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.action2 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.action22{
+    font-size: 10px;
+    margin-left: 100px;
+ 
+}
+.action222{
+    font-size: 20px;
+    margin-left: 20px;
+  
+}
+
+.action2222{
+    font-size: 20px;
+    margin-left: 100px;
+ 
+}
+
+@media screen and (max-width:1367px){
+    .game_window{
+        width: 70vw;
+        height: 89vh;
+    }
+ 
+    .main_bar div{
+        width: 20vw;
+    }
+    .main_tap{
+        width: 150px;
+        height: 150px;
+    }
+    .main_tap img{
+        width: 80px;
+    }
+    .main_wallet img{
+        width: 50px;
+    }
+    .main_wallet-cash{
+        font-size: 25px;
+    }
+    .game_footer{
+        height: 50px;
+    }
+}
+
+
+@keyframes tap-money{
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }100%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+}
+
+@keyframes taping{
+0%{
+    transform: skew(0);
+}50%{
+    transform: skew(1deg);
+
+}10%{
+    transform: skew(0);
+}
+
+}
