@@ -58,7 +58,7 @@ main_tap.style.animation = "taping 0.3s 1"
 
 
 let img = document.createElement("img")
-img.src = "../img/hamster_coin.png"
+img.src = "./img/hamster_coin.png"
 img.classList.add("tap-money")
 
 let x = e.clientX
