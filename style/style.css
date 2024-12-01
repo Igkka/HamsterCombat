@@ -464,8 +464,8 @@ transform:translateY(-5px) ;
 
 @media screen and (max-width:1367px){
     .game_window{
-        width: 70vw;
-        height: 89vh;
+        width: 90vw;
+        height: 90vh;
     }
  
     .main_bar div{
